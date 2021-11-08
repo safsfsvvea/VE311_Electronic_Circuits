@@ -1,0 +1,10 @@
+* source HW8_1
+M_M1         N14527 N14400 0 0 Mbreakn  
++ L=2um  
++ W=20um         
+V_V1         N14400 0 1.2Vdc
+V_V2         N14393 0 0Vdc
+M_M2         N14393 N14538 N14527 N14527 MbreakN  
++ L=2um  
++ W=100um         
+V_V3         N14538 0 2.2Vdc

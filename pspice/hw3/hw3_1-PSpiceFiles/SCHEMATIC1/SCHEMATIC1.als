@@ -1,0 +1,5 @@
+.ALIASES
+Q_Q1            Q1(c=N14385 b=N14366 e=0 ) CN @HW3_1.SCHEMATIC1(sch_1):INS14307@BREAKOUT.QbreakN.Normal(chips)
+V_V1            V1(+=N14366 -=0 ) CN @HW3_1.SCHEMATIC1(sch_1):INS14334@SOURCE.VDC.Normal(chips)
+V_V2            V2(+=N14385 -=0 ) CN @HW3_1.SCHEMATIC1(sch_1):INS14350@SOURCE.VDC.Normal(chips)
+.ENDALIASES

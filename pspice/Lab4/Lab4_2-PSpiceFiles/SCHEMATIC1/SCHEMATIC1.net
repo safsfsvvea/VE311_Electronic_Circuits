@@ -1,0 +1,13 @@
+* source LAB4_2
+M_M1         N14418 N14422 0 0 Mbreakn  
++ L=2um  
++ W=52um         
+M_M2         N14418 N14418 N14429 N14429 Mbreakp  
++ L=2um  
++ W=5um         
+V_V1         N14429 0 3Vdc
+M_M3         N14418 N14418 N14429 N14429 MbreakP  
++ L=2um  
++ W=5um         
+V_V2         N14422 0  AC 0
++SIN 0.9 0.01 100Hz 0 0 0

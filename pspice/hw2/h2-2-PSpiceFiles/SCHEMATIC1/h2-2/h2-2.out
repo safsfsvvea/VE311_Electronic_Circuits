@@ -1,0 +1,108 @@
+
+**** 10/10/20 00:44:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-h2-2"  [ D:\pspice\hw2\h2-2-pspicefiles\schematic1\h2-2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "h2-2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../h2-2-pspicefiles/h2-2.lib" 
+* From [PSPICE NETLIST] section of C:\Users\ZWK\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 0.000001 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source H2-2
+V_V1         N14494 N14547  AC 0
++SIN 0 6 60 0 0 0
+D_D1         0 N14494 Dbreak 
+D_D2         0 N14547 Dbreak 
+D_D3         N14547 N14551 Dbreak 
+D_D4         N14494 N14551 Dbreak 
+C_C1         0 N14551  0.000383  TC=0,0 
+R_R1         0 N14551  1k TC=0,0 
+
+**** RESUMING h2-2.cir ****
+.END
+
+**** 10/10/20 00:44:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-h2-2"  [ D:\pspice\hw2\h2-2-pspicefiles\schematic1\h2-2.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS    3.000000E-12 
+
+
+**** 10/10/20 00:44:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-h2-2"  [ D:\pspice\hw2\h2-2-pspicefiles\schematic1\h2-2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14494)-1.027E-18 (N14547)-1.027E-18 (N14551)-49.95E-24 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/10/20 00:44:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-h2-2"  [ D:\pspice\hw2\h2-2-pspicefiles\schematic1\h2-2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .86
+

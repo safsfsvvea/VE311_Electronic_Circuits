@@ -1,0 +1,6 @@
+* source HW3_2
+Q_Q1         N143561 N14428 0 Qbreakn 
+R_R1         N143561 N14419  5k TC=0,0 
+V_V2         N14419 0 3Vdc
+V_V3         N14428 0  AC 0
++SIN 0.5v 0.001v 100 0 0 0

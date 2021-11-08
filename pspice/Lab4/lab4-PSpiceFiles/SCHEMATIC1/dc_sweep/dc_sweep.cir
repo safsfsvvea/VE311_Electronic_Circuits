@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-dc_sweep"  [ D:\pspice\Lab4\lab4-pspicefiles\schematic1\dc_sweep.sim ] 
+
+** Creating circuit file "dc_sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab4-pspicefiles/lab4.lib" 
+* From [PSPICE NETLIST] section of C:\Users\ZWK\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V2 0 3 0.0001 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

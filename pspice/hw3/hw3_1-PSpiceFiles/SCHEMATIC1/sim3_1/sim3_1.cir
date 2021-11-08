@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-sim3_1"  [ D:\pspice\hw3\hw3_1-pspicefiles\schematic1\sim3_1.sim ] 
+
+** Creating circuit file "sim3_1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../hw3_1-pspicefiles/hw3_1.lib" 
+* From [PSPICE NETLIST] section of C:\Users\ZWK\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0.49v 0.51v 0.00001v 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

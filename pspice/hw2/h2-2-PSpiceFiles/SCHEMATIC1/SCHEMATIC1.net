@@ -1,0 +1,9 @@
+* source H2-2
+V_V1         N14494 N14547  AC 0
++SIN 0 6 60 0 0 0
+D_D1         0 N14494 Dbreak 
+D_D2         0 N14547 Dbreak 
+D_D3         N14547 N14551 Dbreak 
+D_D4         N14494 N14551 Dbreak 
+C_C1         0 N14551  0.000383  TC=0,0 
+R_R1         0 N14551  1k TC=0,0 

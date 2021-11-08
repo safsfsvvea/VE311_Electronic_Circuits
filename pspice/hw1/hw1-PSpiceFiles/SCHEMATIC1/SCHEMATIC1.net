@@ -1,0 +1,5 @@
+* source HW1
+D_D1         N14405 N14364 Dbreak 
+D_D2         N14405 N14364 Dbreak 
+R_R1         0 N14364  1k TC=0,0 
+V_V1         N14405 0 0Vdc

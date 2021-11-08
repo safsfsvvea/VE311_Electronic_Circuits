@@ -1,0 +1,9 @@
+* source HW6_2
+M_M1         N14440 N14409 N143150 N143150 Mbreakn  
++ L=2um  
++ W=200um         
+R_R1         0 N143150  20k TC=0,0 
+R_R2         N14440 N14490  100k TC=0,0 
+V_V2         N14490 0 5Vdc
+V_V3         N14409 0  AC 0
++SIN 1.2v 0.01v 100Hz 0 0 0

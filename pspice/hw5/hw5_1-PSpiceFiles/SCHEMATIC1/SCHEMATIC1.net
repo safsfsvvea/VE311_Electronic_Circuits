@@ -1,0 +1,8 @@
+* source HW5_1
+M_M1         N14430 N14371 0 0 Mbreakn  
++ L=2um  
++ W=68.54um         
+R_R1         N14430 N143970  10k TC=0,0 
+V_V2         N143970 0 5Vdc
+V_V3         N14371 0  AC 0
++SIN 0.9v 1v 100Hz 0 0 0

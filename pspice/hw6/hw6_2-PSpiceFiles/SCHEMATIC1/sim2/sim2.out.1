@@ -1,0 +1,49 @@
+
+**** 11/10/20 21:30:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim2"  [ D:\pspice\hw6\hw6_2-pspicefiles\schematic1\sim2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../hw6_2-pspicefiles/hw6_2.lib" 
+* From [PSPICE NETLIST] section of C:\Users\ZWK\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V1 1.199v 1.201v 0.00001v 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HW6_2
+M_M1         N14440 N14409 N143150 N143150 Mbreakn  
++ L=2um  
++ W=200um         
+R_R1         0 N143150  20k TC=0,0 
+R_R2         N14440 N14490  100k TC=0,0 
+V_V2         N14490 0 5Vdc
+V_V3         N14409 0  AC 0
++SIN 1.2v 0.01v 100Hz 0 0 0
+
+**** RESUMING sim2.cir ****
+.END
+
+
+ERROR(ORPSIM-15090): DC device V1 is undefined
+

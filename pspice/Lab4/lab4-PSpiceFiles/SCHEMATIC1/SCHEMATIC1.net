@@ -1,0 +1,13 @@
+* source LAB4
+M_M1         N15161 N14444 0 0 MbreakN  
++ L=2um  
++ W=52um         
+V_V1         N15132 0 3Vdc
+M_M2         N15161 N15161 N15132 N15132 Mbreakp  
++ L=2um  
++ W=5um         
+M_M3         0 N15161 N15132 N15132 Mbreakp  
++ L=2um  
++ W=5um         
+V_V2         N14444 0  
++SIN 0.8 0.01 100 0 0 0

@@ -1,0 +1,41 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("QbreakN")
+        ("VDC")
+    )
+    ("instances"
+        ("Q1"
+            ("device_name"	"QbreakN")
+            ("pspice_path"	"Q_Q1")
+            ("level"	"0")
+            ("model_params"
+                ("AREA"
+                    ("value"	"")
+                    ("pspice_param"	"AREA")
+                )
+            )
+        )
+        ("V1"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0.5Vdc")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("V2"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V2")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"1Vdc")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+    )
+)

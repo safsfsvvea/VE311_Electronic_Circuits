@@ -1,0 +1,60 @@
+
+**** 12/05/20 04:03:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-dc_sweep"  [ C:\Users\71401\Desktop\lab4-PSpiceFiles\SCHEMATIC1\dc_sweep.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dc_sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab4-pspicefiles/lab4.lib" 
+* From [PSPICE NETLIST] section of C:\Users\71401\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V2 0 3 0.0001 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB4
+M_M1         N143132 N14444 N14389 N14389 MbreakN  
++ L=2um  
++ W=52um         
+M_M2         N14370 N14370 N143132 N143132 Mbreakn  
++ L=2um  
++ W=52um         
+V_V1         N14370 N14389 3Vdc
+V_V2         N14444 N14389 0Vdc
+
+**** RESUMING dc_sweep.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file lab4.ind for library file lab4.lib.
+
+INFO(ORPSIM-15422): Making new index file lab4.ind for library file lab4.lib.
+
+Index has 1 entries from 1 file(s).
+
+ERROR(ORPSIM-15142): Node N143132 is floating
+
+ERROR(ORPSIM-15142): Node N14444 is floating
+
+ERROR(ORPSIM-15142): Node N14389 is floating
+
+ERROR(ORPSIM-15142): Node N14370 is floating
+

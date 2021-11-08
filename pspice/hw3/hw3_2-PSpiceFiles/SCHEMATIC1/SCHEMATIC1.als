@@ -1,0 +1,6 @@
+.ALIASES
+Q_Q1            Q1(c=N143561 b=N14428 e=0 ) CN @HW3_2.SCHEMATIC1(sch_1):INS14344@BREAKOUT.QbreakN.Normal(chips)
+R_R1            R1(1=N143561 2=N14419 ) CN @HW3_2.SCHEMATIC1(sch_1):INS14385@ANALOG.R.Normal(chips)
+V_V2            V2(+=N14419 -=0 ) CN @HW3_2.SCHEMATIC1(sch_1):INS14569@SOURCE.VDC.Normal(chips)
+V_V3            V3(+=N14428 -=0 ) CN @HW3_2.SCHEMATIC1(sch_1):INS14639@SOURCE.VSIN.Normal(chips)
+.ENDALIASES

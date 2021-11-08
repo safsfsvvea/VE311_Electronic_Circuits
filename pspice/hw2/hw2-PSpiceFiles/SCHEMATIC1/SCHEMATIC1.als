@@ -1,0 +1,6 @@
+.ALIASES
+V_V2            V2(+=N14473 -=0 ) CN @HW2.SCHEMATIC1(sch_1):INS14350@SOURCE.VSIN.Normal(chips)
+D_D1            D1(1=N14473 2=N14480 ) CN @HW2.SCHEMATIC1(sch_1):INS14387@BREAKOUT.Dbreak.Normal(chips)
+C_C1            C1(1=0 2=N14480 ) CN @HW2.SCHEMATIC1(sch_1):INS14412@ANALOG.C.Normal(chips)
+R_R1            R1(1=0 2=N14480 ) CN @HW2.SCHEMATIC1(sch_1):INS14457@ANALOG.R.Normal(chips)
+.ENDALIASES

@@ -1,0 +1,154 @@
+
+**** 11/17/20 21:53:03 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim3"  [ D:\pspice\hw7\hw7_3-PSpiceFiles\SCHEMATIC1\sim3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../hw7_3-pspicefiles/hw7_3.lib" 
+* From [PSPICE NETLIST] section of C:\Users\ZWK\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.1 0 0.00001 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HW7_3
+M_M1         N14645 N14675 0 0 Mbreakn  
++ L=2um  
++ W=50um         
+V_V2         N14605 0 5Vdc
+R_R2         0 N14653  2k TC=0,0 
+R_R1         N14645 N14605  10k TC=0,0 
+M_M2         N14653 N14985 0 0 MbreakN  
++ L=2um  
++ W=20um         
+M_M3         N14898 N14645 N14653 N14653 Mbreakn  
++ L=2um  
++ W=20um         
+V_V3         N14898 0 5Vdc
+V_V4         N14985 0 1Vdc
+V_V5         N14675 0  AC 0
++SIN 1v 1v 100Hz 0 0 0
+
+**** RESUMING sim3.cir ****
+.END
+
+**** 11/17/20 21:53:03 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim3"  [ D:\pspice\hw7\hw7_3-PSpiceFiles\SCHEMATIC1\sim3.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakn         
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+          LD   80.000000E-09 
+         VTO     .7          
+          KP  134.288900E-06 
+       GAMMA    0            
+         PHI     .9          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS   10.000000E-09 
+          PB     .9          
+        PBSW     .9          
+          CJ  560.000000E-06 
+        CJSW    3.500000E-12 
+          MJ     .45         
+        MJSW     .2          
+        CGSO    0            
+        CGDO  400.000000E-12 
+        CGBO    0            
+        NSUB  900.000000E+12 
+         TOX    9.000000E-09 
+          XJ    0            
+          UO  350            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 11/17/20 21:53:03 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim3"  [ D:\pspice\hw7\hw7_3-PSpiceFiles\SCHEMATIC1\sim3.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14605)    5.0000 (N14645)    3.3579 (N14653)    1.5763 (N14675)    1.0000     
+
+(N14898)    5.0000 (N14985)    1.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.642E-04
+    V_V3        -8.538E-04
+    V_V4         0.000E+00
+    V_V5         0.000E+00
+
+    TOTAL POWER DISSIPATION   5.09E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/17/20 21:53:03 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim3"  [ D:\pspice\hw7\hw7_3-PSpiceFiles\SCHEMATIC1\sim3.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .27
+

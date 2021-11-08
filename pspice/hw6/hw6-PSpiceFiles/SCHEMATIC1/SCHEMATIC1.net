@@ -1,0 +1,10 @@
+* source HW6
+M_M1         N14438 N14426 0 0 Mbreakn  
++ L=2um  
++ W=51.99um         
+M_M2         N14438 N14438 N14466 N14466 Mbreakp  
++ L=2um  
++ W=5um         
+V_V2         N14466 0 5Vdc
+V_V3         N14426 0  AC 0
++SIN 1v 1v 100Hz 0 0 0

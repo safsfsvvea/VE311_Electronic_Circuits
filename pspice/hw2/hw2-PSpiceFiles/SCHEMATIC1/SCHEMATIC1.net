@@ -1,0 +1,6 @@
+* source HW2
+V_V2         N14473 0  AC 0
++SIN 0 6 60 0 0 0
+D_D1         N14473 N14480 Dbreak 
+C_C1         0 N14480  0.000883  TC=0,0 
+R_R1         0 N14480  1k TC=0,0 

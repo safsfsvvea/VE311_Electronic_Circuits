@@ -1,0 +1,7 @@
+* source HW7_1
+M_M1         N14437 N14441 0 0 Mbreakn  
++ L=2um  
++ W=50um         
+R_R1         N14437 N14430  10k TC=0,0 
+V_V1         N14441 0 0Vdc
+V_V2         N14430 0 5Vdc

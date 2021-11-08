@@ -1,0 +1,6 @@
+.ALIASES
+M_M1            M1(d=N14438 g=N14426 s=0 s=0 ) CN @HW6.SCHEMATIC1(sch_1):INS14303@BREAKOUT.MbreakN3.Normal(chips)
+M_M2            M2(d=N14438 g=N14438 s=N14466 s=N14466 ) CN @HW6.SCHEMATIC1(sch_1):INS14359@BREAKOUT.MbreakP3.Normal(chips)
+V_V2            V2(+=N14466 -=0 ) CN @HW6.SCHEMATIC1(sch_1):INS14386@SOURCE.VDC.Normal(chips)
+V_V3            V3(+=N14426 -=0 ) CN @HW6.SCHEMATIC1(sch_1):INS14746@SOURCE.VSIN.Normal(chips)
+.ENDALIASES

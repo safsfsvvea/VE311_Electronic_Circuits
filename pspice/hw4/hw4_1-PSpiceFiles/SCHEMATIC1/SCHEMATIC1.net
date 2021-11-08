@@ -1,0 +1,6 @@
+* source HW4_1
+M_M1         N14425 N14364 0 0 Mbreakn  
++ L=2um  
++ W=20um         
+V_V1         N14364 0 2Vdc
+V_V2         N14425 0 0Vdc

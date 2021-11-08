@@ -1,0 +1,146 @@
+
+**** 12/08/20 17:19:10 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim2"  [ D:\pspice\Lab4\Lab4_2-PSpiceFiles\SCHEMATIC1\sim2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab4_2-pspicefiles/lab4_2.lib" 
+* From [PSPICE NETLIST] section of C:\Users\ZWK\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 0.00001 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB4_2
+M_M1         N14418 N14422 0 0 Mbreakn  
++ L=2um  
++ W=52um         
+M_M2         N14418 N14418 N14429 N14429 Mbreakp  
++ L=2um  
++ W=5um         
+V_V1         N14429 0 3Vdc
+M_M3         N14418 N14418 N14429 N14429 MbreakP  
++ L=2um  
++ W=5um         
+V_V2         N14422 0  AC 0
++SIN 0.9 0.01 100Hz 0 0 0
+
+**** RESUMING sim2.cir ****
+.END
+
+**** 12/08/20 17:19:10 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim2"  [ D:\pspice\Lab4\Lab4_2-PSpiceFiles\SCHEMATIC1\sim2.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakn         Mbreakp         
+               NMOS            PMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+          LD   80.000000E-09   90.000000E-09 
+         VTO     .7             -.8          
+          KP  134.288900E-06   38.368260E-06 
+       GAMMA     .1              .1          
+         PHI     .9              .8          
+      LAMBDA     .1              .1          
+          IS   10.000000E-15   10.000000E-15 
+          JS   10.000000E-09    5.000000E-09 
+          PB     .9              .9          
+        PBSW     .9              .9          
+          CJ  560.000000E-06  940.000000E-06 
+        CJSW    3.500000E-12    3.200000E-12 
+          MJ     .45                         
+        MJSW     .2              .3          
+        CGSO    0               0            
+        CGDO  400.000000E-12  300.000000E-12 
+        CGBO    0               0            
+        NSUB  900.000000E+12  500.000000E+12 
+         TOX    9.000000E-09    9.000000E-09 
+          XJ    0               0            
+          UO  350             100            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 12/08/20 17:19:10 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim2"  [ D:\pspice\Lab4\Lab4_2-PSpiceFiles\SCHEMATIC1\sim2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14418)    1.3616 (N14422)     .9000 (N14429)    3.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -8.624E-05
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.59E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/08/20 17:19:10 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim2"  [ D:\pspice\Lab4\Lab4_2-PSpiceFiles\SCHEMATIC1\sim2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .13
+
